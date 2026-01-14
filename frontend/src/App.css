@@ -1,0 +1,78 @@
+.main-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.empty-message {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  opacity: 0.6;
+}
+/* ---------- THEME SWITCH BUTTON ---------- */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* ---------- LIGHT THEME ---------- */
+body.light {
+  background: #ffffff;
+  color: #222;
+}
+
+/* ---------- DARK THEME ---------- */
+body.dark {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* DARK SIDEBAR */
+body.dark .sidebar {
+  background: #2a2a2a;
+  border-right: 1px solid #555;
+}
+
+body.dark .session-item {
+  background: #333;
+  border-color: #555;
+  color: white;
+}
+
+body.dark .session-item.active {
+  background: #0078ff;
+  border-color: #0078ff;
+}
+
+/* DARK CHAT WINDOW */
+body.dark .chat-box {
+  background: #2a2a2a;
+  border-color: #555;
+}
+
+body.dark .bubble.bot {
+  background: #333;
+  border-color: #555;
+  color: white;
+}
+
+body.dark .bubble.user {
+  background: #0078ff;
+}
+
+/* DARK INPUT BAR */
+body.dark .chat-input input {
+  background: #333;
+  color: white;
+  border-color: #555;
+}
+
+body.dark .chat-input button {
+  background: #005fcc;
+}
